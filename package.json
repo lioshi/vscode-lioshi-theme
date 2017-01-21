@@ -1,0 +1,26 @@
+{
+    "name": "vscode-lioshi-theme",
+    "displayName": "Lioshi Theme",
+    "description": "Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-theme",
+    "version": "0.0.1",
+    "publisher": "lioshi",
+    "license": "LICENSE.md",
+    "homepage": "https://github.com/lioshi/vscode-lioshi-theme",
+
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "icon":"icon.svg",
+    "contributes": {
+        "themes": [
+            {
+                "label": "lioshi theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/lioshi.tmTheme"
+            }
+        ]
+    }
+}
