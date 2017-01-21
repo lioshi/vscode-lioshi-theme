@@ -276,6 +276,17 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Doc</string>
+			<key>scope</key>
+			<string>string.unquoted.heredoc.php</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#D6CF92</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Sub-methods</string>
 			<key>scope</key>
 			<string>entity.name.module.js, variable.import.parameter.js, variable.other.class.js</string>
