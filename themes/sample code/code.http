@@ -1,0 +1,9 @@
+GET http://example.com/app.php/api/token.json HTTP/1.1
+content-type: application/json
+email: api-user@example.com
+apikey: 6e8d85040797895ad8071ba5741dd548f4efcf23
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}

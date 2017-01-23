@@ -1,0 +1,23 @@
+{%load timediff%}
+{%for act in latest_actions %}
+<li>
+{%if act.first_name and act.last_initial%}
+    {{act.first_name}} {{act.last_initial}},
+{%endif%}{{act.long_state}}
+<span class="timeago" timeval="{{act.createtime|epoch}}"></span>
+</li>
+{%endfor%}
+
+<p>Rendered text with {{ pub_date|date:"c" }}</p>
+{% comment "Optional note" %}
+    <p>Commented out text with {{ create_date|date:"c" }}</p>
+{% endcomment %}
+
+<tr>
+    <td class="{% cycle 'row1' 'row2' as rowcolors %}">...</td>
+    <td class="{{ rowcolors }}">...</td>
+</tr>
+<tr>
+    <td class="{% cycle rowcolors %}">...</td>
+    <td class="{{ rowcolors }}">...</td>
+</tr>

@@ -214,7 +214,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d75a64</string>
+				<string>#DE935F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -236,7 +236,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d75a64</string>
+				<string>#DE935F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -282,7 +282,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D6CF92</string>
+				<string>#E5E0B9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -598,7 +598,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d75a64</string>
+				<string>#DE935F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1028,9 +1028,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D69E59</string>
-				<key>background</key>
-				<string>#494949</string>
+				<string>#C1B7D6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1258,6 +1256,17 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Markdown - List unnumbered</string>
+			<key>scope</key>
+			<string>markup.list.unnumbered.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B7D6D1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>AceJump Label</string>
 			<key>scope</key>
 			<string>acejump.label</string>
@@ -1443,6 +1452,39 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#b5bd68</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Yaml string</string>
+			<key>scope</key>
+			<string>string.quoted.double.yaml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E5E0B9</string>
+			</dict>
+		</dict>	
+		<dict>
+			<key>name</key>
+			<string>Python constant</string>
+			<key>scope</key>
+			<string>constant.other.caps.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ABE2D9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shell</string>
+			<key>scope</key>
+			<string>comment.line.shebang.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E2D9AB</string>
 			</dict>
 		</dict>
 	</array>

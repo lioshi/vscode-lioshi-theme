@@ -1,0 +1,17 @@
+/* css styles */
+p {
+    border-style: solid;
+}
+
+p.none {border-right-style: none;}
+p.dotted {border-right-style: dotted;}
+
+p:first-child {
+    color: blue;
+} 
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
