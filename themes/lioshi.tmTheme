@@ -18,7 +18,7 @@
 				<key>activeGuide</key>
 				<string>#ffffff55</string>
 				<key>background</key>
-				<string>#2C2C2C</string>
+				<string>#303030</string>
 				<key>caret</key>
 				<string>#aeafad</string>
 				<key>foreground</key>
@@ -34,7 +34,7 @@
 				<key>popupCss</key>
 				<string>
 html {
-  background-color: #2C2C2C;
+  background-color: #303030;
   color: #c5c8c6;
 }
 
@@ -186,6 +186,28 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>css.tag</string>
+			<key>scope</key>
+			<string>entity.name.tag.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A3C27B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css.property</string>
+			<key>scope</key>
+			<string>meta.property-value.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BCF6E2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Keyword, Storage</string>
 			<key>scope</key>
 			<string>keyword, storage.type, storage.modifier</string>
@@ -215,6 +237,17 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#DE935F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag doctype</string>
+			<key>scope</key>
+			<string>meta.tag.sgml.doctype</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#80C27B</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1473,7 +1506,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ABE2D9</string>
+				<string>#A6E0D7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1487,6 +1520,118 @@ a {
 				<string>#E2D9AB</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta function call</string>
+			<key>scope</key>
+			<string>meta.function-call</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BE8184</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta function call arguments</string>
+			<key>scope</key>
+			<string>meta.function-call.arguments</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DEB45F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta function call arguments</string>
+			<key>scope</key>
+			<string>punctuation.definition.list</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CC6666</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta function call generic</string>
+			<key>scope</key>
+			<string>meta.function-call.generic.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#88BD68</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>operator.assignment</string>
+			<key>scope</key>
+			<string>keyword.operator.assignment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E0BE32</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>operator.arithmetic</string>
+			<key>scope</key>
+			<string>keyword.operator.arithmetic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9299d6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>control.flow</string>
+			<key>scope</key>
+			<string>keyword.control.flow</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#81A2BE</string>
+			</dict>
+		</dict>				
+		<dict>
+			<key>name</key>
+			<string>string quoted single</string>
+			<key>scope</key>
+			<string>string.quoted.single</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B5BD68</string>
+			</dict>
+		</dict>	
+		<dict>
+			<key>name</key>
+			<string>source http</string>
+			<key>scope</key>
+			<string>http.requestline</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E0BE32</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>tag xml</string>
+			<key>scope</key>
+			<string>entity.name.tag.xml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B5BD68</string>
+			</dict>
+		</dict>
+		
+
 	</array>
 	<key>uuid</key>
 	<string>F96223EB-1A60-4617-92F3-D24D4F13DB09</string>
