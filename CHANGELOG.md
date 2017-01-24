@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.1.0] 2017-01-24
+- add sample's code display
+- add some supports
+
 ## [0.0.5] 2017-01-21
 - Add php doc
 
