@@ -2,7 +2,10 @@
 
 Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-theme
 
-## c 
+## Python's code sample
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-py.png)
+
+<!--## c 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-c.png)
 ## cpp 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-cpp.png)
@@ -37,7 +40,7 @@ Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-t
 ## yaml
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-yml.png)
 ## bash
-![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-sh.png)
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-sh.png)-->
 
 
 ---

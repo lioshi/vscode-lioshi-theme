@@ -6,7 +6,6 @@ activities = {8: 'Sleeping',
               18: 'Commuting',
               20: 'Eating',
               22: 'Resting' }
-# PRINTS:
 # This is the first attempt
 time_now = localtime()
 hour = time_now.tm_hour
@@ -17,6 +16,12 @@ for activity_time in sorted(activities.keys()):
         break
 else:
     print 'Unknown, AFK or sleeping!'
+
+Celsius = int(raw_input("Enter a temperature in Celsius: "))
+
+Fahrenheit = 9.0/5.0 * Celsius + 32
+
+print "Temperature:", Celsius, "Celsius = ", Fahrenheit, " F"   
 
 class TestMedian(unittest.TestCase):
     def testMedian(self):
@@ -45,9 +50,5 @@ while n != "guess":
 
 
 
-#!/usr/bin/env python
-Celsius = int(raw_input("Enter a temperature in Celsius: "))
 
-Fahrenheit = 9.0/5.0 * Celsius + 32
 
-print "Temperature:", Celsius, "Celsius = ", Fahrenheit, " F"    
