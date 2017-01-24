@@ -21,3 +21,4 @@
     <td class="{% cycle rowcolors %}">...</td>
     <td class="{{ rowcolors }}">...</td>
 </tr>
+
