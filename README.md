@@ -3,7 +3,7 @@
 Dark theme based inspired by Tomorrow Eighties
 
 ## Python's code sample
-![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-py.png)
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-python.png)
 
 ## Colors
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/colors.png)
