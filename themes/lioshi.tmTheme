@@ -1621,6 +1621,39 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>keyword.control.http</string>
+			<key>scope</key>
+			<string>keyword.control.http</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#81A2BE</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>const.language.http</string>
+			<key>scope</key>
+			<string>const.language.http</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#8ABEB7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>constant.numeric.http</string>
+			<key>scope</key>
+			<string>constant.numeric.http</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#80C27B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>tag xml</string>
 			<key>scope</key>
 			<string>entity.name.tag.xml</string>

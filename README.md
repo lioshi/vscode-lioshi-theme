@@ -4,43 +4,42 @@ Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-t
 
 ## Python's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-py.png)
-
-<!--## c 
+## C's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-c.png)
-## cpp 
+## C++'s code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-cpp.png)
-## css 
+## Css's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-css.png)
-## html 
+## Html's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-html.png)
-## html-django 
+## Html-django's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-html-django.png)
-## java 
+## Java's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-java.png)
-## javascript 
+## Javascript's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-js.png)
-## json 
+## Json's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-json.png)
-## less 
+## Less's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-less.png)
-## markdown
+## Markdown's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-md.png)
-## php 
+## Php's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-php.png)
-## python 
+## Python's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-py.png)
-## ruby 
+## Ruby's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-rb.png)
-## xml
+## Xml's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-xml.png)
-## dockerfile
+## Dockerfile's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-dockerfile.png)
-## http
+## Http's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-http.png)
-## yaml
+## Yaml's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-yml.png)
-## bash
-![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-sh.png)-->
+## Bash's code sample
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-sh.png)
 
 
 ---
