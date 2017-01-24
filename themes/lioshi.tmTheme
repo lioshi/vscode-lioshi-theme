@@ -18,7 +18,7 @@
 				<key>activeGuide</key>
 				<string>#ffffff55</string>
 				<key>background</key>
-				<string>#303030</string>
+				<string>#2d2d2d</string>
 				<key>caret</key>
 				<string>#aeafad</string>
 				<key>foreground</key>
@@ -36,7 +36,7 @@
 				<key>popupCss</key>
 				<string>
 html {
-  background-color: #303030;
+  background-color: #2d2d2d;
   color: #c5c8c6;
 }
 

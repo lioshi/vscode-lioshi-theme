@@ -30,8 +30,6 @@ class TestMedian(unittest.TestCase):
 print queens
 print "\n".join(". "*q + "Q " + ". "*(BOARD_SIZE-q-1) for q in queens)
 
-
-
 import random
 n = random.randint(1, 99)
 guess = int(raw_input("Enter an integer from 1 to 99: "))
