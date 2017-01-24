@@ -2,7 +2,7 @@
     "name": "vscode-lioshi-theme",
     "displayName": "Lioshi Dark Theme",
     "description": "Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-theme",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "lioshi",
     "license": "LICENSE.md",
     "homepage": "https://github.com/lioshi/vscode-lioshi-theme",
