@@ -30,7 +30,9 @@
 				<key>invisibles</key>
 				<string>#969896</string>
 				<key>lineHighlight</key>
-				<string>#ffffff10</string>
+				<string>#393939</string>
+				<key>selection</key>
+				<string>#515151</string>
 				<key>popupCss</key>
 				<string>
 html {
@@ -59,7 +61,7 @@ a {
 }
 
 .type {
-  color: #8abeb7;
+  color: #5d968d;
   font-style: italic;
 }
 
@@ -100,7 +102,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#c5c8c6</string>
+				<string>#cc6666</string>
 			</dict>
 		</dict>
 		<dict>
@@ -203,7 +205,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#BCF6E2</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -225,7 +227,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8abeb7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -416,7 +418,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8abeb7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -427,7 +429,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8abeb7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -875,7 +877,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8abeb7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1473,7 +1475,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8abeb7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1506,10 +1508,21 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6E0D7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>Python constant numeric dec</string>
+			<key>scope</key>
+			<string>constant.numeric.dec.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c5c8c6</string>
+			</dict>
+		</dict>
+ 		<dict>
 			<key>name</key>
 			<string>Shell</string>
 			<key>scope</key>
@@ -1562,6 +1575,17 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#88BD68</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>variable legacy builtin python </string>
+			<key>scope</key>
+			<string>variable.legacy.builtin.python </string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#cc6666</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1638,7 +1662,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8ABEB7</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>

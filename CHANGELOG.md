@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.1.2] 2017-01-24
+- some colors
+- only one sample (python's code)
+
 ## [0.1.0] 2017-01-24
 - add sample's code display
 - add some supports
