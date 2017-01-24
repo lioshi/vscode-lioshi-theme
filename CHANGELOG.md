@@ -1,6 +1,9 @@
 # Change Log
 
 ## [0.1.2] 2017-01-24
+- fixed typo
+
+## [0.1.2] 2017-01-24
 - some colors
 - only one sample (python's code)
 
