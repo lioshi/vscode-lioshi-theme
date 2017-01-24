@@ -21,7 +21,7 @@ Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-t
 ## Json's code sample 
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-json.png)
 ## Less's code sample 
-![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-less.png)
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-css-less.png)
 ## Markdown's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-md.png)
 ## Php's code sample 
@@ -35,7 +35,7 @@ Dark theme based on Tomorrow Eighties https://github.com/chriskempson/tomorrow-t
 ## Dockerfile's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-dockerfile.png)
 ## Http's code sample
-![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-http.png)
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-request-http.png)
 ## Yaml's code sample
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-yml.png)
 ## Bash's code sample
