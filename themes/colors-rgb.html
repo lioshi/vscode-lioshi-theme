@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>colors-rgb.html</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div#colors div{float: left; width: 64px; height: 64px; margin: 2px; text-align: center; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+div#colors div span{font-weight: bold; cursor: pointer}
+div#colors div span:hover{text-decoration: underline}
+html{}
+input{margin-left: 1em;}
+</style></head>
+<body>
+<form>
+<div>Item size:<input type="range" id="item_size" min="16" max="128" value="64" oninput="var elements = document.querySelectorAll('div#colors div'); for (var i = 0; i < elements.length; i++){ elements[i].style.width = this.value + 'px'; elements[i].style.height = this.value + 'px'; }" /></div>
+<div>Background color:<input type="color" id="background" oninput="document.body.style.backgroundColor = this.value;" /></div>
+</form>
+<div id="colors">
+<div style="background-color:rgb(204, 102, 102); color:rgb(0, 0, 0)">Geraldine ~:<br/><span>#CC6666</span></div><div style="background-color:rgb(204, 116, 102); color:rgb(0, 0, 0)">scheme Neutral #2[New york pink]:<br/><span>#CC7466</span></div><div style="background-color:rgb(204, 129, 102); color:rgb(0, 0, 0)">scheme Neutral #3[Burning sand]:<br/><span>#CC8166</span></div><div style="background-color:rgb(222, 147, 95); color:rgb(0, 0, 0)">Whiskey sour ~:<br/><span>#DE935F</span></div><div style="background-color:rgb(222, 161, 95); color:rgb(0, 0, 0)">scheme Neutral #2[Porsche]:<br/><span>#DEA15F</span></div><div style="background-color:rgb(222, 175, 95); color:rgb(0, 0, 0)">scheme Neutral #3[Harvest gold]:<br/><span>#DEAF5F</span></div><div style="background-color:rgb(240, 198, 116); color:rgb(0, 0, 0)">Cherokee ~:<br/><span>#F0C674</span></div><div style="background-color:rgb(240, 210, 116); color:rgb(0, 0, 0)">scheme Neutral #2[Golden glow]:<br/><span>#F0D274</span></div><div style="background-color:rgb(240, 222, 116); color:rgb(0, 0, 0)">scheme Neutral #3[Sweet corn]:<br/><span>#F0DE74</span></div><div style="background-color:rgb(181, 189, 104); color:rgb(0, 0, 0)">Deco ~:<br/><span>#B5BD68</span></div><div style="background-color:rgb(146, 185, 96); color:rgb(0, 0, 0)">scheme Neutral #2[Chelsea cucumber]:<br/><span>#92B960</span></div><div style="background-color:rgb(105, 178, 79); color:rgb(0, 0, 0)">scheme Neutral #3[Mantis]:<br/><span>#69B24F</span></div><div style="background-color:rgb(93, 150, 141); color:rgb(0, 0, 0)">Gulf stream ~:<br/><span>#5D968D</span></div><div style="background-color:rgb(93, 145, 150); color:rgb(0, 0, 0)">scheme Neutral #2[Half baked]:<br/><span>#5D9196</span></div><div style="background-color:rgb(93, 133, 153); color:rgb(0, 0, 0)">Bermuda grey ~:<br/><span>#5D8599</span></div><div style="background-color:rgb(129, 162, 190); color:rgb(0, 0, 0)">Sail ~:<br/><span>#81A2BE</span></div><div style="background-color:rgb(129, 140, 190); color:rgb(0, 0, 0)">scheme Neutral #2[Perano]:<br/><span>#818CBE</span></div><div style="background-color:rgb(131, 129, 190); color:rgb(0, 0, 0)">scheme Neutral #3[Lavender]:<br/><span>#8381BE</span></div><div style="background-color:rgb(190, 148, 187); color:rgb(0, 0, 0)">French lilac ~:<br/><span>#BE94BB</span></div><div style="background-color:rgb(190, 148, 161); color:rgb(0, 0, 0)">scheme Neutral #3[Classic rose]:<br/><span>#BE94A1</span></div><div style="background-color:rgb(190, 157, 148); color:rgb(0, 0, 0)">scheme Neutral #5[Del rio]:<br/><span>#BE9D94</span></div></div>
+<script>
+function selectText(element){ if (document.selection){ var range = document.body.createTextRange(); range.moveToElementText(element); range.select(); }else if (window.getSelection){ var range = document.createRange(); range.selectNode(element); window.getSelection().addRange(range); } }
+document.getElementById('colors').addEventListener('click', function(event){ if (event.target.tagName.toLowerCase() == 'span'){ event.preventDefault(); selectText(event.target); document.execCommand('copy'); }});
+</script></body></html>
