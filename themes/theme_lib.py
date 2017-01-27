@@ -12,10 +12,6 @@ def get_scope_params(fil):
     tree = etree.parse(fil)
     i = 0
 
-    # general settings
-    # for elem in tree.xpath("dict/array/dict/dict"):
-
-
     # all dicts
     for elem in tree.xpath("dict/array/dict/key"):
         if elem.text == "scope":
@@ -39,30 +35,54 @@ def get_scope_params(fil):
 
         except KeyError:
             #  no scope before
-            if elem.text == "settings":
-                dict2 = elem.getnext()
-                for settings in list(dict2):
-                    if settings.text == "background":
-                        background = settings.getnext()
-                        scope_params[0] = {}
-                        scope_params[0]["scope"] = "general.background"
-                        scope_params[0]["background"] = background.text
-            # pass
-
-
-    # scope_params_format = {}
-    # for entry, entry_value in scope_params
-    #     if entry == "scope"
-    #         scope_params_format[entry_value] = {}
-    #     if entry == "scope"
-    #         scope_params_format[entry_value] = {}
-
+            pass
 
     return scope_params
 
+def get_general_params(fil):
+    '''Get general settings from a tmThemefile'''
 
-def get_color_file_html_header(bgcolor):
+    general_params = {}
+
+    tree = etree.parse(fil)
+
+    # all dicts
+    for elem in tree.xpath("dict/array/dict/dict/key"):
+        if elem.text == "background":
+            background = elem.getnext()
+            general_params["background"] = background.text
+        if elem.text == "foreground":
+            foreground = elem.getnext()
+            general_params["foreground"] = foreground.text
+        if len(general_params) == 2:
+            break
+    return general_params
+
+def get_general_infos(fil):
+    '''Get general infos from a tmThemefile'''
+
+    general_infos = {}
+
+    tree = etree.parse(fil)
+
+    # all dicts
+    for elem in tree.xpath("dict/key"):
+        if elem.text == "name":
+            name = elem.getnext()
+            general_infos["name"] = name.text
+        if elem.text == "author":
+            author = elem.getnext()
+            general_infos["author"] = author.text
+        if len(general_infos) == 2:
+            break
+    return general_infos
+
+def get_color_file_html_header(bgcolor, fgcolor, infos):
     """ return header """
+
+    infos_formated = ""
+    for info in infos:
+        infos_formated += "<p><b>"+info+"</b>&nbsp;&nbsp;<span>"+infos[info]+"</span></p>"
 
     html = """
 <!DOCTYPE html>
@@ -74,10 +94,10 @@ def get_color_file_html_header(bgcolor):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         html {
-            background-color : """+bgcolor+""";
+            background-color: """+bgcolor+""";
+            color: """+fgcolor+""";
         }
         div#colors div {
-            float: left;
             width: 64px;
             height: 64px;
             margin: 2px;
@@ -85,6 +105,7 @@ def get_color_file_html_header(bgcolor):
             font-size: 12px;
             font-family: Arial, Helvetica, sans-serif;
             color:#000;
+            display: inline-block;
         }
         
         div#colors div span {
@@ -97,17 +118,24 @@ def get_color_file_html_header(bgcolor):
         }
         
         input {
-            margin-left: 1em;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     </style>
 </head>
 
 <body>
+    <p>
+    """+infos_formated+"""
+    </p>
     <form>
-        <div>Item size:<input type="range" id="item_size" min="16" max="128" value="64" oninput="var elements = document.querySelectorAll('div#colors div'); for (var i = 0; i < elements.length; i++){ elements[i].style.width = this.value + 'px'; elements[i].style.height = this.value + 'px'; }"
+        <div>
+        <input type="range" id="item_size" min="16" max="128" value="64" oninput="var elements = document.querySelectorAll('div#colors div'); for (var i = 0; i < elements.length; i++){ elements[i].style.width = this.value + 'px'; elements[i].style.height = this.value + 'px'; }"
             /></div>
     </form>
     <div id="colors">
+
     """
 
     return html
@@ -137,10 +165,10 @@ def get_color_file_html_footer():
 
     return html
 
-def get_color_file_html_new_color(color):
+def get_color_file_html_new_color(scope, color):
     """ return new color """
 
-    html = "<div style=\"background-color:"+color+";\"><br/><span>#"+color+"</span></div>\n"
+    html = "<div title=\"SCOPE: "+scope+"\" style=\"background-color:"+color+";\"><br/><span>"+color+"</span></div>\n"
 
     return html
 

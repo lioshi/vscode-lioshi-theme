@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         html {
-            background-color : #2d2d2d;
+            background-color: #2d2d2d;
+            color: #c5c8c6;
         }
         div#colors div {
-            float: left;
             width: 64px;
             height: 64px;
             margin: 2px;
@@ -19,6 +19,7 @@
             font-size: 12px;
             font-family: Arial, Helvetica, sans-serif;
             color:#000;
+            display: inline-block;
         }
         
         div#colors div span {
@@ -31,137 +32,165 @@
         }
         
         input {
-            margin-left: 1em;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     </style>
 </head>
 
 <body>
+    <p>
+    <p><b>name</b>&nbsp;&nbsp;<span>lioshi dark theme</span></p><p><b>author</b>&nbsp;&nbsp;<span>lioshi</span></p>
+    </p>
     <form>
-        <div>Item size:<input type="range" id="item_size" min="16" max="128" value="64" oninput="var elements = document.querySelectorAll('div#colors div'); for (var i = 0; i < elements.length; i++){ elements[i].style.width = this.value + 'px'; elements[i].style.height = this.value + 'px'; }"
+        <div>
+        <input type="range" id="item_size" min="16" max="128" value="64" oninput="var elements = document.querySelectorAll('div#colors div'); for (var i = 0; i < elements.length; i++){ elements[i].style.width = this.value + 'px'; elements[i].style.height = this.value + 'px'; }"
             /></div>
     </form>
     <div id="colors">
-    <div style="background-color:#666666;"><br/><span>##666666</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#ffffff;"><br/><span>##ffffff</span></div>
-<div style="background-color:#ffffff;"><br/><span>##ffffff</span></div>
-<div style="background-color:#E5D56D;"><br/><span>##E5D56D</span></div>
-<div style="background-color:#8FB447;"><br/><span>##8FB447</span></div>
-<div style="background-color:#C0E18C;"><br/><span>##C0E18C</span></div>
-<div style="background-color:#DA4632;"><br/><span>##DA4632</span></div>
-<div style="background-color:#FF950A;"><br/><span>##FF950A</span></div>
-<div style="background-color:#A3C27B;"><br/><span>##A3C27B</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#b294bb;"><br/><span>##b294bb</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#DE935F;"><br/><span>##DE935F</span></div>
-<div style="background-color:#80C27B;"><br/><span>##80C27B</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#DE935F;"><br/><span>##DE935F</span></div>
-<div style="background-color:#de935f;"><br/><span>##de935f</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#E5E0B9;"><br/><span>##E5E0B9</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#b294bb;"><br/><span>##b294bb</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#b294bb;"><br/><span>##b294bb</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#a3685a;"><br/><span>##a3685a</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#cc6666bf;"><br/><span>##cc6666bf</span></div>
-<div style="background-color:#81a2bebf;"><br/><span>##81a2bebf</span></div>
-<div style="background-color:#f0c674bf;"><br/><span>##f0c674bf</span></div>
-<div style="background-color:#b294bbbf;"><br/><span>##b294bbbf</span></div>
-<div style="background-color:#de935f;"><br/><span>##de935f</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#b294bb;"><br/><span>##b294bb</span></div>
-<div style="background-color:#c5c8c6;"><br/><span>##c5c8c6</span></div>
-<div style="background-color:#c5c8c6cc;"><br/><span>##c5c8c6cc</span></div>
-<div style="background-color:#ffffff50;"><br/><span>##ffffff50</span></div>
-<div style="background-color:#DE935F;"><br/><span>##DE935F</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#969896;"><br/><span>##969896</span></div>
-<div style="background-color:#ffffff16;"><br/><span>##ffffff16</span></div>
-<div style="background-color:#969896;"><br/><span>##969896</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#b294bb;"><br/><span>##b294bb</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#c5c8c6cc;"><br/><span>##c5c8c6cc</span></div>
-<div style="background-color:#c5c8c6;"><br/><span>##c5c8c6</span></div>
-<div style="background-color:#ffffff50;"><br/><span>##ffffff50</span></div>
-<div style="background-color:#969896;"><br/><span>##969896</span></div>
-<div style="background-color:#969896;"><br/><span>##969896</span></div>
-<div style="background-color:#c5c8c6cc;"><br/><span>##c5c8c6cc</span></div>
-<div style="background-color:#ffffff50;"><br/><span>##ffffff50</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#c5c8c6;"><br/><span>##c5c8c6</span></div>
-<div style="background-color:#9f74ab75;"><br/><span>##9f74ab75</span></div>
-<div style="background-color:#9f74ab;"><br/><span>##9f74ab</span></div>
-<div style="background-color:#9E9E9E;"><br/><span>##9E9E9E</span></div>
-<div style="background-color:#9f74ab35;"><br/><span>##9f74ab35</span></div>
-<div style="background-color:#81a2be75;"><br/><span>##81a2be75</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#C1B7D6;"><br/><span>##C1B7D6</span></div>
-<div style="background-color:#81a2be35;"><br/><span>##81a2be35</span></div>
-<div style="background-color:#f0c67475;"><br/><span>##f0c67475</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#f0c67435;"><br/><span>##f0c67435</span></div>
-<div style="background-color:#cc666675;"><br/><span>##cc666675</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#cc666635;"><br/><span>##cc666635</span></div>
-<div style="background-color:#b5bd6875;"><br/><span>##b5bd6875</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#b5bd6835;"><br/><span>##b5bd6835</span></div>
-<div style="background-color:#B7D6D1;"><br/><span>##B7D6D1</span></div>
-<div style="background-color:#ffffff;"><br/><span>##ffffff</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#ffffff;"><br/><span>##ffffff</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#969896;"><br/><span>##969896</span></div>
-<div style="background-color:#969896;"><br/><span>##969896</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#b294bb;"><br/><span>##b294bb</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#9f74ab;"><br/><span>##9f74ab</span></div>
-<div style="background-color:#f0c674;"><br/><span>##f0c674</span></div>
-<div style="background-color:#81a2be;"><br/><span>##81a2be</span></div>
-<div style="background-color:#de935f;"><br/><span>##de935f</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#b5bd68;"><br/><span>##b5bd68</span></div>
-<div style="background-color:#E5E0B9;"><br/><span>##E5E0B9</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#c5c8c6;"><br/><span>##c5c8c6</span></div>
-<div style="background-color:#E2D9AB;"><br/><span>##E2D9AB</span></div>
-<div style="background-color:#BE8184;"><br/><span>##BE8184</span></div>
-<div style="background-color:#DEB45F;"><br/><span>##DEB45F</span></div>
-<div style="background-color:#CC6666;"><br/><span>##CC6666</span></div>
-<div style="background-color:#88BD68;"><br/><span>##88BD68</span></div>
-<div style="background-color:#cc6666;"><br/><span>##cc6666</span></div>
-<div style="background-color:#E0BE32;"><br/><span>##E0BE32</span></div>
-<div style="background-color:#9299d6;"><br/><span>##9299d6</span></div>
-<div style="background-color:#81A2BE;"><br/><span>##81A2BE</span></div>
-<div style="background-color:#B5BD68;"><br/><span>##B5BD68</span></div>
-<div style="background-color:#E0BE32;"><br/><span>##E0BE32</span></div>
-<div style="background-color:#81A2BE;"><br/><span>##81A2BE</span></div>
-<div style="background-color:#5d968d;"><br/><span>##5d968d</span></div>
-<div style="background-color:#80C27B;"><br/><span>##80C27B</span></div>
-<div style="background-color:#B5BD68;"><br/><span>##B5BD68</span></div>
+
+    <p><b>default colors</b></p><div title="SCOPE: " style="background-color:#CC6666;"><br/><span>#CC6666</span></div>
+<div title="SCOPE: " style="background-color:#CC7466;"><br/><span>#CC7466</span></div>
+<div title="SCOPE: " style="background-color:#CC8166;"><br/><span>#CC8166</span></div>
+<br><div title="SCOPE: " style="background-color:#DE935F;"><br/><span>#DE935F</span></div>
+<div title="SCOPE: " style="background-color:#DEA15F;"><br/><span>#DEA15F</span></div>
+<div title="SCOPE: " style="background-color:#DEAF5F;"><br/><span>#DEAF5F</span></div>
+<br><div title="SCOPE: " style="background-color:#F0C674;"><br/><span>#F0C674</span></div>
+<div title="SCOPE: " style="background-color:#F0D274;"><br/><span>#F0D274</span></div>
+<div title="SCOPE: " style="background-color:#F0DE74;"><br/><span>#F0DE74</span></div>
+<br><div title="SCOPE: " style="background-color:#B5BD68;"><br/><span>#B5BD68</span></div>
+<div title="SCOPE: " style="background-color:#92B960;"><br/><span>#92B960</span></div>
+<div title="SCOPE: " style="background-color:#69B24F;"><br/><span>#69B24F</span></div>
+<br><div title="SCOPE: " style="background-color:#5D968D;"><br/><span>#5D968D</span></div>
+<div title="SCOPE: " style="background-color:#5D9196;"><br/><span>#5D9196</span></div>
+<div title="SCOPE: " style="background-color:#5D8599;"><br/><span>#5D8599</span></div>
+<br><div title="SCOPE: " style="background-color:#81A2BE;"><br/><span>#81A2BE</span></div>
+<div title="SCOPE: " style="background-color:#818CBE;"><br/><span>#818CBE</span></div>
+<div title="SCOPE: " style="background-color:#8381BE;"><br/><span>#8381BE</span></div>
+<br><div title="SCOPE: " style="background-color:#BE94BB;"><br/><span>#BE94BB</span></div>
+<div title="SCOPE: " style="background-color:#BE94A1;"><br/><span>#BE94A1</span></div>
+<div title="SCOPE: " style="background-color:#BE9D94;"><br/><span>#BE9D94</span></div>
+<br><p><b>scope colors</b></p><div title="SCOPE: comment, punctuation.definition.comment" style="background-color:#666666;"><br/><span>#666666</span></div>
+<div title="SCOPE: variable, string constant.other.placeholder" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: invalid" style="background-color:#ffffff;"><br/><span>#ffffff</span></div>
+<div title="SCOPE: invalid.deprecated" style="background-color:#ffffff;"><br/><span>#ffffff</span></div>
+<div title="SCOPE: meta.selector.css entity.other.attribute-name.id" style="background-color:#E5D56D;"><br/><span>#E5D56D</span></div>
+<div title="SCOPE: entity.other.attribute-name.class" style="background-color:#8FB447;"><br/><span>#8FB447</span></div>
+<div title="SCOPE: entity.other.less.mixin" style="background-color:#C0E18C;"><br/><span>#C0E18C</span></div>
+<div title="SCOPE: keyword.control.html.elements" style="background-color:#DA4632;"><br/><span>#DA4632</span></div>
+<div title="SCOPE: meta.attribute-selector.css string" style="background-color:#FF950A;"><br/><span>#FF950A</span></div>
+<div title="SCOPE: entity.name.tag.css" style="background-color:#A3C27B;"><br/><span>#A3C27B</span></div>
+<div title="SCOPE: meta.property-value.css" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: keyword, storage.type, storage.modifier" style="background-color:#b294bb;"><br/><span>#b294bb</span></div>
+<div title="SCOPE: keyword.operator, constant.other.color, punctuation, meta.tag, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter" style="background-color:#DE935F;"><br/><span>#DE935F</span></div>
+<div title="SCOPE: meta.tag.sgml.doctype" style="background-color:#80C27B;"><br/><span>#80C27B</span></div>
+<div title="SCOPE: entity.name.function, variable.function, support.function, keyword.other.special-method, meta.block-level" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: support.other.variable, string.other.link" style="background-color:#DE935F;"><br/><span>#DE935F</span></div>
+<div title="SCOPE: constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit" style="background-color:#de935f;"><br/><span>#de935f</span></div>
+<div title="SCOPE: string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js, string.quoted.double.html, string.quoted.single.html, string.unquoted.html" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: entity.name.class, entity.name.type.class, support.type, support.class, support.other.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: string.unquoted.heredoc.php" style="background-color:#E5E0B9;"><br/><span>#E5E0B9</span></div>
+<div title="SCOPE: entity.name.module.js, variable.import.parameter.js, variable.other.class.js" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: variable, variable.other.readwrite.js, variable.other.object.js, variable.other.object.property.js, variable.other.property.js" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: entity.name.method.js" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: meta.class-method.js entity.name.function.js, variable.function.constructor" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: entity.other.attribute-name" style="background-color:#b294bb;"><br/><span>#b294bb</span></div>
+<div title="SCOPE: markup.inserted" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: markup.deleted" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: markup.changed" style="background-color:#b294bb;"><br/><span>#b294bb</span></div>
+<div title="SCOPE: string.regexp" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: constant.character.escape" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: constant.numeric.line-number.find-in-files - match" style="background-color:#a3685a;"><br/><span>#a3685a</span></div>
+<div title="SCOPE: entity.name.filename.find-in-files" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: source.js constant.other.object.key.js string.unquoted.label.js" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#cc6666bf;"><br/><span>#cc6666bf</span></div>
+<div title="SCOPE: source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#81a2bebf;"><br/><span>#81a2bebf</span></div>
+<div title="SCOPE: source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#f0c674bf;"><br/><span>#f0c674bf</span></div>
+<div title="SCOPE: source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#b294bbbf;"><br/><span>#b294bbbf</span></div>
+<div title="SCOPE: source.json meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#de935f;"><br/><span>#de935f</span></div>
+<div title="SCOPE: source.json meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: source.json meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: source.json meta meta.structure.dictionary.json string.quoted.double.json - meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta.structure.dictionary.json punctuation.definition.string - meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: source.json meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta.structure.dictionary.json punctuation.definition.string - meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string" style="background-color:#b294bb;"><br/><span>#b294bb</span></div>
+<div title="SCOPE: text.html.markdown, punctuation.definition.list_item.markdown" style="background-color:#c5c8c6;"><br/><span>#c5c8c6</span></div>
+<div title="SCOPE: text.html.markdown markup.raw.inline" style="background-color:#c5c8c6cc;"><br/><span>#c5c8c6cc</span></div>
+<div title="SCOPE: text.html.markdown meta.dummy.line-break" style="background-color:#ffffff50;"><br/><span>#ffffff50</span></div>
+<div title="SCOPE: markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown punctuation.definition.heading.markdown" style="background-color:#DE935F;"><br/><span>#DE935F</span></div>
+<div title="SCOPE: markup.underline" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: markup.strike" style="background-color:#969896;"><br/><span>#969896</span></div>
+<div title="SCOPE: markup.quote punctuation.definition.blockquote.markdown" style="background-color:#ffffff16;"><br/><span>#ffffff16</span></div>
+<div title="SCOPE: markup.quote" style="background-color:#969896;"><br/><span>#969896</span></div>
+<div title="SCOPE: string.other.link.title.markdown" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: string.other.link.description.title.markdown" style="background-color:#b294bb;"><br/><span>#b294bb</span></div>
+<div title="SCOPE: constant.other.reference.link.markdown" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: markup.raw.block" style="background-color:#c5c8c6cc;"><br/><span>#c5c8c6cc</span></div>
+<div title="SCOPE: markup.raw.block.fenced.markdown, variable.language.fenced.markdown, punctuation.section.class.end" style="background-color:#c5c8c6;"><br/><span>#c5c8c6</span></div>
+<div title="SCOPE: punctuation.definition.fenced.markdown, meta.definition.language.raw.block.fenced.markdown" style="background-color:#ffffff50;"><br/><span>#ffffff50</span></div>
+<div title="SCOPE: variable.language.fenced.markdown" style="background-color:#969896;"><br/><span>#969896</span></div>
+<div title="SCOPE: meta.separator" style="background-color:#969896;"><br/><span>#969896</span></div>
+<div title="SCOPE: markup.table" style="background-color:#c5c8c6cc;"><br/><span>#c5c8c6cc</span></div>
+<div title="SCOPE: text.html.markdown punctuation.definition, text.html.markdown.note punctuation.definition.list_item.markdown, markup.table.markdown punctuation.definition.table.vertical-line.markdown, text.html.markdown markup.checkbox.markdown" style="background-color:#ffffff50;"><br/><span>#ffffff50</span></div>
+<div title="SCOPE: text.html.markdown meta.disable-markdown punctuation.definition" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: punctuation.definition.list_item.todo.done" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: punctuation.definition.list_item.todo.cancelled" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: markup.checkbox.markdown markup.checkbox.checked_symbol.markdown" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: markup.admonition.markdown string.other.admonition.title.markdown" style="background-color:#c5c8c6;"><br/><span>#c5c8c6</span></div>
+<div title="SCOPE: markup.admonition.markdown punctuation.definition.admonition.markdown, markup.admonition.markdown punctuation.definition.heading,markup.admonition.markdown punctuation.definition.table.vertical-line, markup.admonition.markdown punctuation.definition.table.horizontal-line, markup.admonition.markdown punctuation.definition.table.alignments, markup.admonition.markdown punctuation.definition.heading, markup.admonition.markdown punctuation.definition.bold, markup.admonition.markdown punctuation.definition.italic, markup.admonition.markdown punctuation.definition.list_item, markup.admonition.markdown punctuation.definition.raw, markup.admonition.markdown markup.checkbox.markdown, markup.admonition.markdown punctuation.definition.list_item.todo.pending, markup.admonition.markdown meta.link punctuation.definition, markup.admonition.markdown meta.link.inline markup.underline.link, markup.admonition.markdown meta.link.reference.markdown constant.other.reference.link.markdown, markup.admonition.markdown punctuation.definition.entity.html, markup.admonition.markdown meta.separator.markdown, markup.admonition.markdown markup.table.markdown punctuation.definition.table.vertical-line.markdown, markup.admonition.markdown meta.definition.language.raw.block.fenced.markdown" style="background-color:#9f74ab75;"><br/><span>#9f74ab75</span></div>
+<div title="SCOPE: markup.admonition.markdown entity.name.admonition.markdown" style="background-color:#9f74ab;"><br/><span>#9f74ab</span></div>
+<div title="SCOPE: markup.admonition.markdown markup.table, markup.admonition.markdown markup.raw, markup.admonition.markdown markup.raw.block.fenced meta.language, markup.admonition.markdown punctuation.definition.blockquote.markdown, markup.admonition.markdown meta.separator, markup.admonition.markdown markup.raw.inline, markup.admonition.markdown markup.raw.block" style="background-color:#9E9E9E;"><br/><span>#9E9E9E</span></div>
+<div title="SCOPE: markup.admonition.markdown markup.quote punctuation.definition.blockquote.markdown" style="background-color:#9f74ab35;"><br/><span>#9f74ab35</span></div>
+<div title="SCOPE: markup.admonition.markdown.hint punctuation.definition.admonition.markdown, markup.admonition.markdown.hint punctuation.definition.heading,markup.admonition.markdown.hint punctuation.definition.table.vertical-line, markup.admonition.markdown.hint punctuation.definition.table.horizontal-line, markup.admonition.markdown.hint punctuation.definition.table.alignments, markup.admonition.markdown.hint punctuation.definition.heading, markup.admonition.markdown.hint punctuation.definition.bold, markup.admonition.markdown.hint punctuation.definition.italic, markup.admonition.markdown.hint punctuation.definition.list_item, markup.admonition.markdown.hint punctuation.definition.raw, markup.admonition.markdown.hint markup.checkbox.markdown, markup.admonition.markdown.hint punctuation.definition.list_item.todo.pending, markup.admonition.markdown.hint meta.link punctuation.definition, markup.admonition.markdown.hint meta.link.inline markup.underline.link, markup.admonition.markdown.hint meta.link.reference.markdown constant.other.reference.link.markdown, markup.admonition.markdown.hint punctuation.definition.entity.html, markup.admonition.markdown.hint meta.separator.markdown, markup.admonition.markdown.hint markup.table.markdown punctuation.definition.table.vertical-line.markdown, markup.admonition.markdown.hint meta.definition.language.raw.block.fenced.markdown" style="background-color:#81a2be75;"><br/><span>#81a2be75</span></div>
+<div title="SCOPE: markup.admonition.markdown.hint entity.name.admonition.markdown" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: markup.raw.block.markdown" style="background-color:#C1B7D6;"><br/><span>#C1B7D6</span></div>
+<div title="SCOPE: markup.admonition.markdown.hint markup.quote punctuation.definition.blockquote.markdown" style="background-color:#81a2be35;"><br/><span>#81a2be35</span></div>
+<div title="SCOPE: markup.admonition.markdown.warning punctuation.definition.admonition.markdown, markup.admonition.markdown.warning punctuation.definition.heading,markup.admonition.markdown.warning punctuation.definition.table.vertical-line, markup.admonition.markdown.warning punctuation.definition.table.horizontal-line, markup.admonition.markdown.warning punctuation.definition.table.alignments, markup.admonition.markdown.warning punctuation.definition.heading, markup.admonition.markdown.warning punctuation.definition.bold, markup.admonition.markdown.warning punctuation.definition.italic, markup.admonition.markdown.warning punctuation.definition.list_item, markup.admonition.markdown.warning punctuation.definition.raw, markup.admonition.markdown.warning markup.checkbox.markdown, markup.admonition.markdown.warning punctuation.definition.list_item.todo.pending, markup.admonition.markdown.warning meta.link punctuation.definition, markup.admonition.markdown.warning meta.link.inline markup.underline.link, markup.admonition.markdown.warning meta.link.reference.markdown constant.other.reference.link.markdown, markup.admonition.markdown.warning punctuation.definition.entity.html, markup.admonition.markdown.warning meta.separator.markdown, markup.admonition.markdown.warning markup.table.markdown punctuation.definition.table.vertical-line.markdown, markup.admonition.markdown.warning meta.definition.language.raw.block.fenced.markdown" style="background-color:#f0c67475;"><br/><span>#f0c67475</span></div>
+<div title="SCOPE: markup.admonition.markdown.warning entity.name.admonition.markdown" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: markup.admonition.markdown.warning markup.quote punctuation.definition.blockquote.markdown" style="background-color:#f0c67435;"><br/><span>#f0c67435</span></div>
+<div title="SCOPE: markup.admonition.markdown.danger punctuation.definition.admonition.markdown, markup.admonition.markdown.danger punctuation.definition.heading,markup.admonition.markdown.danger punctuation.definition.table.vertical-line, markup.admonition.markdown.danger punctuation.definition.table.horizontal-line, markup.admonition.markdown.danger punctuation.definition.table.alignments, markup.admonition.markdown.danger punctuation.definition.heading, markup.admonition.markdown.danger punctuation.definition.bold, markup.admonition.markdown.danger punctuation.definition.italic, markup.admonition.markdown.danger punctuation.definition.list_item, markup.admonition.markdown.danger punctuation.definition.raw, markup.admonition.markdown.danger markup.checkbox.markdown, markup.admonition.markdown.danger punctuation.definition.list_item.todo.pending, markup.admonition.markdown.danger meta.link punctuation.definition, markup.admonition.markdown.danger meta.link.inline markup.underline.link, markup.admonition.markdown.danger meta.link.reference.markdown constant.other.reference.link.markdown, markup.admonition.markdown.danger punctuation.definition.entity.html, markup.admonition.markdown.danger meta.separator.markdown, markup.admonition.markdown.danger markup.table.markdown punctuation.definition.table.vertical-line.markdown, markup.admonition.markdown.danger meta.definition.language.raw.block.fenced.markdown" style="background-color:#cc666675;"><br/><span>#cc666675</span></div>
+<div title="SCOPE: markup.admonition.markdown.danger entity.name.admonition.markdown" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: markup.admonition.markdown.danger markup.quote punctuation.definition.blockquote.markdown" style="background-color:#cc666635;"><br/><span>#cc666635</span></div>
+<div title="SCOPE: markup.admonition.markdown.attention punctuation.definition.admonition.markdown, markup.admonition.markdown.attention punctuation.definition.heading,markup.admonition.markdown.attention punctuation.definition.table.vertical-line, markup.admonition.markdown.attention punctuation.definition.table.horizontal-line, markup.admonition.markdown.attention punctuation.definition.table.alignments, markup.admonition.markdown.attention punctuation.definition.heading, markup.admonition.markdown.attention punctuation.definition.bold, markup.admonition.markdown.attention punctuation.definition.italic, markup.admonition.markdown.attention punctuation.definition.list_item, markup.admonition.markdown.attention punctuation.definition.raw, markup.admonition.markdown.attention markup.checkbox.markdown, markup.admonition.markdown.attention punctuation.definition.list_item.todo.pending, markup.admonition.markdown.attention meta.link punctuation.definition, markup.admonition.markdown.attention meta.link.inline markup.underline.link, markup.admonition.markdown.attention meta.link.reference.markdown constant.other.reference.link.markdown, markup.admonition.markdown.attention punctuation.definition.entity.html, markup.admonition.markdown.attention meta.separator.markdown, markup.admonition.markdown.attention markup.table.markdown punctuation.definition.table.vertical-line.markdown, markup.admonition.markdown.attention meta.definition.language.raw.block.fenced.markdown" style="background-color:#b5bd6875;"><br/><span>#b5bd6875</span></div>
+<div title="SCOPE: markup.admonition.markdown.attention entity.name.admonition.markdown" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: markup.admonition.markdown.attention markup.quote punctuation.definition.blockquote.markdown" style="background-color:#b5bd6835;"><br/><span>#b5bd6835</span></div>
+<div title="SCOPE: markup.list.unnumbered.markdown" style="background-color:#B7D6D1;"><br/><span>#B7D6D1</span></div>
+<div title="SCOPE: acejump.label" style="background-color:#ffffff;"><br/><span>#ffffff</span></div>
+<div title="SCOPE: sublimelinter.mark.warning" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: sublimelinter.gutter-mark" style="background-color:#ffffff;"><br/><span>#ffffff</span></div>
+<div title="SCOPE: sublimelinter.mark.error" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: markup.ignored.git_gutter" style="background-color:#969896;"><br/><span>#969896</span></div>
+<div title="SCOPE: markup.untracked.git_gutter" style="background-color:#969896;"><br/><span>#969896</span></div>
+<div title="SCOPE: markup.inserted.git_gutter" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: markup.changed.git_gutter" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: markup.deleted.git_gutter" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: brackethighlighter.default" style="background-color:#b294bb;"><br/><span>#b294bb</span></div>
+<div title="SCOPE: brackethighlighter.unmatched" style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: brackethighlighter.curly" style="background-color:#9f74ab;"><br/><span>#9f74ab</span></div>
+<div title="SCOPE: brackethighlighter.round" style="background-color:#f0c674;"><br/><span>#f0c674</span></div>
+<div title="SCOPE: brackethighlighter.square" style="background-color:#81a2be;"><br/><span>#81a2be</span></div>
+<div title="SCOPE: brackethighlighter.angle" style="background-color:#de935f;"><br/><span>#de935f</span></div>
+<div title="SCOPE: brackethighlighter.tag" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: brackethighlighter.quote" style="background-color:#b5bd68;"><br/><span>#b5bd68</span></div>
+<div title="SCOPE: string.quoted.double.yaml" style="background-color:#E5E0B9;"><br/><span>#E5E0B9</span></div>
+<div title="SCOPE: constant.other.caps.python" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: constant.numeric.dec.python" style="background-color:#c5c8c6;"><br/><span>#c5c8c6</span></div>
+<div title="SCOPE: comment.line.shebang.shell" style="background-color:#E2D9AB;"><br/><span>#E2D9AB</span></div>
+<div title="SCOPE: meta.function-call" style="background-color:#BE8184;"><br/><span>#BE8184</span></div>
+<div title="SCOPE: meta.function-call.arguments" style="background-color:#DEB45F;"><br/><span>#DEB45F</span></div>
+<div title="SCOPE: punctuation.definition.list" style="background-color:#CC6666;"><br/><span>#CC6666</span></div>
+<div title="SCOPE: meta.function-call.generic.python" style="background-color:#88BD68;"><br/><span>#88BD68</span></div>
+<div title="SCOPE: variable.legacy.builtin.python " style="background-color:#cc6666;"><br/><span>#cc6666</span></div>
+<div title="SCOPE: keyword.operator.assignment" style="background-color:#E0BE32;"><br/><span>#E0BE32</span></div>
+<div title="SCOPE: keyword.operator.arithmetic" style="background-color:#9299d6;"><br/><span>#9299d6</span></div>
+<div title="SCOPE: keyword.control.flow" style="background-color:#81A2BE;"><br/><span>#81A2BE</span></div>
+<div title="SCOPE: string.quoted.single" style="background-color:#B5BD68;"><br/><span>#B5BD68</span></div>
+<div title="SCOPE: http.requestline" style="background-color:#E0BE32;"><br/><span>#E0BE32</span></div>
+<div title="SCOPE: keyword.control.http" style="background-color:#81A2BE;"><br/><span>#81A2BE</span></div>
+<div title="SCOPE: const.language.http" style="background-color:#5d968d;"><br/><span>#5d968d</span></div>
+<div title="SCOPE: constant.numeric.http" style="background-color:#80C27B;"><br/><span>#80C27B</span></div>
+<div title="SCOPE: entity.name.tag.xml" style="background-color:#B5BD68;"><br/><span>#B5BD68</span></div>
 
     </div>
         <script>

@@ -35,50 +35,62 @@
 				<string>#515151</string>
 				<key>popupCss</key>
 				<string>
-html {
-  background-color: #2d2d2d;
-  color: #c5c8c6;
-}
+					html {
+					background-color: #2d2d2d;
+					color: #c5c8c6;
+					}
 
-a {
-  color: #81a2be;
-}
+					a {
+					color: #81a2be;
+					}
 
-.error,
-.deleted {
-  color: #cc6666;
-}
+					.error,
+					.deleted {
+					color: #cc6666;
+					}
 
-.success,
-.inserted,
-.name {
-  color: #b5bd68;
-}
+					.success,
+					.inserted,
+					.name {
+					color: #b5bd68;
+					}
 
-.warning,
-.modified {
-  color: #f0c674;
-}
+					.warning,
+					.modified {
+					color: #f0c674;
+					}
 
-.type {
-  color: #5d968d;
-  font-style: italic;
-}
+					.type {
+					color: #5d968d;
+					font-style: italic;
+					}
 
-.param {
-  color: #de935f;
-}
+					.param {
+					color: #de935f;
+					}
 
-.current {
-  text-decoration: underline;
-}
-</string>
+					.current {
+					text-decoration: underline;
+					}
+					</string>
 				<key>selection</key>
 				<string>#ffffff16</string>
 				<key>selectionBorder</key>
 				<string>#ffffff16</string>
 				<key>stackGuide</key>
 				<string>#ffffff40</string>
+				<key>selectionForeground</key>
+				<string>#ffffff</string>
+				<key>findHighlight</key>
+				<string>#ffe792</string>
+				<key>findHighlightForeground</key>
+				<string>#000000</string>
+				<key>bracketsForeground</key>
+				<string>#69ADB5</string>
+				<key>bracketsOptions</key>
+				<string>underline</string>
+				<key>bracketContentsForeground</key>
+				<string>#25808A</string>
 			</dict>
 		</dict>
 		<dict>

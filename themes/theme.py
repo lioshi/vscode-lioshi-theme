@@ -4,41 +4,79 @@ theme test
 
 import os
 
-from theme_lib import get_scope_params, get_color_file_html_new_color, get_color_file_html_header, get_color_file_html_footer
+from theme_lib import get_scope_params, get_general_params, get_general_infos, get_color_file_html_new_color, get_color_file_html_header, get_color_file_html_footer
 from clint.textui import colored
 
 THEME_FILE = os.path.dirname(os.path.abspath(__file__))+'/lioshi.tmTheme'
-THEME_FILE_STRING = open(THEME_FILE, 'r').read()
 
 # get colors into lioshi.tmTheme file
-
 # print colored.COLORS
-# sys.exit()
 
-
+# html color file
 COLORS_HTML_FILE = os.path.dirname(os.path.abspath(__file__))+'/colors.html'
 COLORS_HTML_FILE_RES = open(COLORS_HTML_FILE, "w")
 
+# html content init
 COLORS_HTML_FILE_CONTENT = ""
 
+# general params
+GENERAL_PARAMS = get_general_params(THEME_FILE)
+GENERAL_INFOS = get_general_infos(THEME_FILE)
+COLORS_HTML_FILE_CONTENT = get_color_file_html_header(GENERAL_PARAMS['background'], GENERAL_PARAMS['foreground'], GENERAL_INFOS)
+
+# default colors
+THEME_COLORS = [
+    "#CC6666",
+    "#CC7466",
+    "#CC8166",
+    "#DE935F",
+    "#DEA15F",
+    "#DEAF5F",
+    "#F0C674",
+    "#F0D274",
+    "#F0DE74",
+    "#B5BD68",
+    "#92B960",
+    "#69B24F",
+    "#5D968D",
+    "#5D9196",
+    "#5D8599",
+    "#81A2BE",
+    "#818CBE",
+    "#8381BE",
+    "#BE94BB",
+    "#BE94A1",
+    "#BE9D94"
+]
+k = 1
+COLORS_HTML_FILE_CONTENT += "<p><b>default colors</b></p>"
+for theme_color in THEME_COLORS:
+    COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color("", theme_color)
+    if k%3 == 0:
+        COLORS_HTML_FILE_CONTENT += "<br>"
+    k += 1
+
+# add scopes
+COLORS_HTML_FILE_CONTENT += "<p><b>scope colors</b></p>"
 SCOPE_PARAMS = get_scope_params(THEME_FILE)
-print colored.cyan("Scope params")
+# print colored.cyan("Scope params")
+i = 0
+j = 0
 for param in SCOPE_PARAMS:
     param = SCOPE_PARAMS[param]
-    print param['scope']
+    # print param['scope']
 
     try:
-        if param['scope'] == "general.background":
-            print colored.yellow(param['background'])
-            COLORS_HTML_FILE_HEADER = get_color_file_html_header(param['background'])
-            COLORS_HTML_FILE_CONTENT = COLORS_HTML_FILE_HEADER + COLORS_HTML_FILE_CONTENT
-
-        print colored.yellow(param['foreground'])
-        COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['foreground'])
+        # print colored.yellow(param['foreground'])
+        COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], param['foreground'])
+        i += 1
 
     except KeyError:
-        print colored.red("no foreground setting")
+        # print colored.red("no foreground setting")
+        j += 1
 
+print colored.cyan(str(i) + " scopes with foreground setting")
+print colored.red(str(j) + " scopes without foreground setting")
 
 COLORS_HTML_FILE_CONTENT += get_color_file_html_footer()
 
@@ -111,7 +149,10 @@ COLORS_HTML_FILE_RES.close()
 
 
 
+# THEME_FILE_STRING = open(THEME_FILE, 'r').read()
 # 
+#
+#
 # THEME_FILE_COPY = open(THEME_FILE+".copy", "w")
 # THEME_FILE_COPY.write(THEME_FILE_STRING)
 # THEME_FILE_COPY.close()
