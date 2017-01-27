@@ -107,16 +107,11 @@ def get_color_file_html_header(bgcolor, fgcolor, infos):
             color:#000;
             display: inline-block;
         }
-        
-        div#colors div span {
-            font-weight: bold;
-            cursor: pointer
+
+        div#colors div.dashed {
+            border: 2px white dashed;
         }
-        
-        div#colors div span:hover {
-            text-decoration: underline
-        }
-        
+       
         input {
             position: absolute;
             top: 20px;
@@ -165,10 +160,20 @@ def get_color_file_html_footer():
 
     return html
 
-def get_color_file_html_new_color(scope, color):
+def get_color_file_html_new_color(scope, color, dashed):
     """ return new color """
+    if scope != "":
+        scope_infos = "SCOPE: "+scope
+    else:
+        scope_infos = ""
 
-    html = "<div title=\"SCOPE: "+scope+"\" style=\"background-color:"+color+";\"><br/><span>"+color+"</span></div>\n"
+    if dashed:
+        class_added = "dashed"
+    else:
+        class_added = ""
+
+
+    html = "<div class=\""+class_added+"\" title=\""+scope_infos+"\" style=\"background-color:"+color+";\"><br/><span>"+color+"</span></div>\n"
 
     return html
 
