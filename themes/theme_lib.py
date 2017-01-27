@@ -109,7 +109,7 @@ def get_color_file_html_header(bgcolor, fgcolor, infos):
         }
 
         div#colors div.dashed {
-            border: 2px white dashed;
+            border: 2px grey dashed;
         }
        
         input {
