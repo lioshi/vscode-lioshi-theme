@@ -4,8 +4,17 @@ theme test
 
 import os
 
-from theme_lib import get_scope_params, get_general_params, get_general_infos, get_color_file_html_new_color, get_color_file_html_header, get_color_file_html_footer
+from theme_lib import (
+    get_scope_params,
+    get_general_params,
+    get_general_infos,
+    get_color_file_html_new_color,
+    get_color_file_html_header,
+    get_color_file_html_footer,
+    get_closer_color
+)
 from clint.textui import colored
+from palette import Color
 
 THEME_FILE = os.path.dirname(os.path.abspath(__file__))+'/lioshi.tmTheme'
 
@@ -26,35 +35,31 @@ COLORS_HTML_FILE_CONTENT = get_color_file_html_header(GENERAL_PARAMS['background
 
 # default colors
 THEME_COLORS = [
+    "#2d2d2d",
+    "#393939",
+    "#515151",
+    "#c5c8c6",
+    "#666666",
     "#CC6666",
-    "#CC7466",
-    "#CC8166",
     "#DE935F",
-    "#DEA15F",
-    "#DEAF5F",
     "#F0C674",
-    "#F0D274",
-    "#F0DE74",
     "#B5BD68",
-    "#92B960",
-    "#80BE6A",
     "#5D968D",
-    "#5D9196",
-    "#7BA4AD",
     "#81A2BE",
-    "#8AA6B8",
-    "#96A6B3",
-    "#BE94BB",
-    "#BE94A1",
-    "#B88A98"
+    "#BE94BB"
 ]
-k = 1
+THEME_COLORS_EXTENDED = list(THEME_COLORS) # create an extended list of colors (more lighters color of THEME_COLORS colors)
 COLORS_HTML_FILE_CONTENT += "<p><b>default colors</b></p>"
 for theme_color in THEME_COLORS:
     COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color("", theme_color, False)
-    if k%3 == 0:
-        COLORS_HTML_FILE_CONTENT += "<br>"
-    k += 1
+    amt_list = [0.07, 0.15, 0.24]
+    for amt in amt_list:
+        a = Color(theme_color)
+        theme_color_lighter = a.lighter(amt).hex
+        THEME_COLORS_EXTENDED.append(theme_color_lighter)
+        COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color("", theme_color_lighter, False)
+    COLORS_HTML_FILE_CONTENT += "<br>"
+print THEME_COLORS_EXTENDED
 
 # add scopes
 COLORS_HTML_FILE_CONTENT += "<p><b>scope colors</b></p>"
@@ -68,43 +73,12 @@ for param in SCOPE_PARAMS:
 
     try:
         # print colored.yellow(param['foreground'])
-        COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], param['foreground'], False)
-
-        # find color most proche
-# 
-# 
-# 
-#                    http://hanzratech.in/2015/01/16/color-difference-between-2-colors-using-python.html
-# 
-# 
-# 
-# sudo pip install colormath
-# Now, lets write the actual code to find the difference between 2 colors.
-
-#  1 from colormath.color_objects import sRGBColor, LabColor
-#  2 from colormath.color_conversions import convert_color
-#  3 from colormath.color_diff import delta_e_cie2000
-#  4 
-#  5 # Red Color
-#  6 color1_rgb = sRGBColor(1.0, 0.0, 0.0);
-#  7 
-#  8 # Blue Color
-#  9 color2_rgb = sRGBColor(0.0, 0.0, 1.0);
-# 10 
-# 11 # Convert from RGB to Lab Color Space
-# 12 color1_lab = convert_color(color1_rgb, LabColor);
-# 13 
-# 14 # Convert from RGB to Lab Color Space
-# 15 color2_lab = convert_color(color2_rgb, LabColor);
-# 16 
-# 17 # Find the color difference
-# 18 delta_e = delta_e_cie2000(color1_lab, color2_lab);
-# 19 
-# 20 print "The difference between the 2 color = ", delta_e
-# - See more at: http://hanzratech.in/2015/01/16/color-difference-between-2-colors-using-python.html#sthash.Sw8L2WKY.dpuf
-
-        COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], param['foreground'], True)
-
+        scope_color = param['foreground']
+        scope_color_closer = get_closer_color(scope_color, THEME_COLORS_EXTENDED)
+        if scope_color_closer.lower() != scope_color.lower():
+            COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], scope_color, False)
+            COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], scope_color_closer, True)
+            COLORS_HTML_FILE_CONTENT += "<br/>"
 
         i += 1
 

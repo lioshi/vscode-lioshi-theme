@@ -3,6 +3,27 @@ lib of theme
 '''
 
 from lxml import etree
+from colormath.color_objects import sRGBColor, LabColor
+from colormath.color_conversions import convert_color
+from colormath.color_diff import delta_e_cie2000
+
+def get_closer_color(color, list_colors):
+    """ get closer color of a color in a color list"""
+    color_rgb = sRGBColor.new_from_rgb_hex(color)
+    color_lab = convert_color(color_rgb, LabColor)
+    closer_color_delta = 100
+    closer_color = color
+    for list_color in list_colors:
+        list_color_rgb = sRGBColor.new_from_rgb_hex(list_color)
+        list_color_lab = convert_color(list_color_rgb, LabColor)
+        # Find the color difference
+        delta_e = delta_e_cie2000(color_lab, list_color_lab)
+        # print "The difference between the ", color, " and ", list_color, " = ", delta_e
+        if delta_e < closer_color_delta:
+            closer_color_delta = delta_e
+            closer_color = list_color
+
+    return closer_color
 
 def get_scope_params(fil):
     '''Get scope's dict from a tmThemefile'''
