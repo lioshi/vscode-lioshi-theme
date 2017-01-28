@@ -78,7 +78,7 @@ for param in SCOPE_PARAMS:
         if scope_color_closer.lower() != scope_color.lower():
             COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], scope_color, False)
             COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color(param['scope'], scope_color_closer, True)
-            COLORS_HTML_FILE_CONTENT += "<br/>"
+            COLORS_HTML_FILE_CONTENT += "<div>&nbsp;</div>"
 
         i += 1
 
