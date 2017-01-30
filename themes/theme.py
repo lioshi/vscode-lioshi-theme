@@ -36,10 +36,7 @@ COLORS_HTML_FILE_CONTENT = get_color_file_html_header(GENERAL_PARAMS['background
 # default colors
 THEME_COLORS = [
     "#2d2d2d",
-    "#393939",
-    "#515151",
     "#c5c8c6",
-    "#666666",
     "#CC6666",
     "#DE935F",
     "#F0C674",
@@ -52,7 +49,7 @@ THEME_COLORS_EXTENDED = list(THEME_COLORS) # create an extended list of colors (
 COLORS_HTML_FILE_CONTENT += "<p><b>default colors</b></p>"
 for theme_color in THEME_COLORS:
     COLORS_HTML_FILE_CONTENT += get_color_file_html_new_color("", theme_color, False)
-    amt_list = [0.07, 0.15, 0.24]
+    amt_list = [0.078, 0.15]
     for amt in amt_list:
         a = Color(theme_color)
         theme_color_lighter = a.lighter(amt).hex
