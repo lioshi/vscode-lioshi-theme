@@ -41,7 +41,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#535353</string>
 			</dict>
 		</dict>
 		<dict>
@@ -65,7 +65,7 @@
 				<key>background</key>
 				<string>#cc6666</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#eceded</string>
 			</dict>
 		</dict>
 		<dict>
@@ -78,7 +78,7 @@
 				<key>background</key>
 				<string>#BE94BB</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#eceded</string>
 			</dict>
 		</dict>
 		<dict>
@@ -111,7 +111,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#cfd49d</string>
+				<string>#c3c984</string>
 			</dict>
 		</dict>
 		<dict>
@@ -572,7 +572,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#cfd49d</string>
+				<string>#c3c984</string>
 			</dict>
 		</dict>
 		<dict>
@@ -653,11 +653,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#cfd49d</string>
+				<string>#c3c984</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#cfd49d</string>
+				<string>#c3c984</string>
 			</dict>
 		</dict>
 		<dict>
@@ -762,7 +762,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#cfd49d</string>
+				<string>#c3c984</string>
 			</dict>
 		</dict>
 		<dict>
@@ -816,7 +816,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#cfd49d</string>
+				<string>#c3c984</string>
 			</dict>
 		</dict>
 		<dict>
@@ -906,7 +906,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#89b6af</string>
+				<string>#73a8a0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1129,7 +1129,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#535353</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1164,9 +1164,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#6C6C6C</string>
+				<string>#535353</string>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#535353</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1260,7 +1260,7 @@
 				<key>background</key>
 				<string>#528bff</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#eceded</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1282,7 +1282,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#eceded</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1461,6 +1461,17 @@
 				<string>#5d968d</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Python constant numeric dec</string>
+			<key>scope</key>
+			<string>constant.numeric.dec.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c5c8c6</string>
+			</dict>
+		</dict>
  		<dict>
 			<key>name</key>
 			<string>Shell</string>
@@ -1480,7 +1491,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#df9f9f</string>
+				<string>#d68484</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1513,7 +1524,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ebbe9e</string>
+				<string>#B5BD68</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1601,7 +1612,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5D968D</string>
+				<string>#5d968d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1628,325 +1639,38 @@
 		</dict>
 		<!--python scopes-->
 		<dict>
+			<key>name</key>
+			<string>comment.line.number-sign.python</string>
 			<key>scope</key>
-			<string>constant.numeric.dec.python</string>
+			<string>comment.line.number-sign.python</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DE935F</string>
+				<string>#FF0000</string>
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>comment.typehint.directive.notation.python</string>
 			<key>scope</key>
-			<string>meta.item-access.python</string>
+			<string>comment.typehint.directive.notation.python</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#dbc4d9</string>
+				<string>#00ff00</string>
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>comment.typehint.variable.notation.python</string>
 			<key>scope</key>
-			<string>meta.item-access.arguments.python</string>
+			<string>comment.typehint.variable.notation.python</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#df9f9f</string>
+				<string>#0000ff</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>scope</key>
-			<string>string.quoted.docstring.multi.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#e6ecf2</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>string.quoted.docstring.multi.python keyword.control.flow.python, string.quoted.docstring.multi.python keyword.codetag.notation.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#89b6af</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.item-access.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#CC6666</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function.parameters.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#cfd49d</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>string.quoted.single.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#B5BD68</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>string.quoted.raw.multi.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#cfd49d</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>variable.parameter.function.language.special.self.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#dbc4d9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function-call.arguments.python meta.function-call.generic.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#89b6af</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>keyword.control.flow.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#BE94BB</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#89b6af</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python comment.line.number-sign.python, meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python comment.regexp, meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python meta.typehint.comment.python comment.typehint.ignore.notation.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#89b6af</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>keyword.control.import.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#dbc4d9</string>
-			</dict>
-		</dict>		
-		<dict>
-			<key>scope</key>
-			<string>meta.function.python meta.function.parameters.python variable.parameter.function.language.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#DE935F</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function.python meta.function.parameters.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ebbe9e</string>
-			</dict>
-		</dict>	
-		<dict>
-			<key>scope</key>
-			<string>comment.line.number-sign.python keyword.codetag.notation.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#7a7a7a</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>storage.type.number.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5D968D</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function-call.python meta.function-call.arguments.python comment.line.number-sign.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#6C6C6C</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>constant.numeric.float.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ebbe9e</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>comment.line.number-sign.python meta.typehint.comment.python comment.typehint.punctuation.notation.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#7a7a7a</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>constant.character.format.placeholder.other.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#DE935F</string>
-			</dict>
-		</dict>	
-		<dict>
-			<key>scope</key>
-			<string>
-			string.quoted.docstring.multi.python punctuation.definition.string.end.python, 
-			string.quoted.docstring.multi.python punctuation.definition.string.begin.python, 
-			string.quoted.docstring.raw.multi.python punctuation.definition.string.begin.python, 
-			string.quoted.docstring.raw.multi.python punctuation.definition.string.end.python,
-			string.regexp.quoted.multi.python punctuation.definition.string.begin.python,
-			string.regexp.quoted.multi.python punctuation.definition.string.end.python
-			meta.function-call.python meta.function-call.arguments.python string.quoted.docstring.multi.python punctuation.definition.string.end.python, 
-			meta.function-call.python meta.function-call.arguments.python string.quoted.docstring.multi.python punctuation.definition.string.begin.python, 
-			meta.function-call.python meta.function-call.arguments.python string.quoted.docstring.raw.multi.python punctuation.definition.string.begin.python, 
-			meta.function-call.python meta.function-call.arguments.python string.quoted.docstring.raw.multi.python punctuation.definition.string.end.python,
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python punctuation.definition.string.begin.python,
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python punctuation.definition.string.end.python 
-			</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#DE935F</string>
-			</dict>
-		</dict>	
-		<dict>
-			<key>scope</key>
-			<string>
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python support.other.escape.special.regexp
-			</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#DE935F</string>
-			</dict>
-		</dict>	
-		<dict>
-			<key>scope</key>
-			<string>
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python comment.line.number-sign.python,
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python comment.regexp
-			</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#b3c7d8</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>
-			string.regexp.quoted.multi.python constant.character.escape.regexp,
-			string.regexp.quoted.multi.python meta.named.regexp meta.character.set.regexp constant.character.set.regexp,
-			string.regexp.quoted.multi.python meta.named.regexp keyword.operator.disjunction.regexp,
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python constant.character.escape.regexp,
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python meta.named.regexp meta.character.set.regexp constant.character.set.regexp,
-			meta.function-call.python meta.function-call.arguments.python string.regexp.quoted.multi.python meta.named.regexp keyword.operator.disjunction.regexp 
-			</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#dbc4d9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>
-			storage.type.format.python
-
-			</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#dbc4d9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>constant.character.escape.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#81A2BE</string>
-			</dict>
-		</dict>
-
-		<dict>
-			<key>scope</key>
-			<string>string.regexp.quoted.multi.python meta.named.regexp entity.name.tag.named.group.regexp, string.regexp.quoted.multi.python meta.named.regexp keyword.operator.quantifier.regexp</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#df9f9f</string>
-			</dict>
-		</dict>	
-		<dict>
-			<key>scope</key>
-			<string>string.regexp.quoted.multi.python support.other.escape.special.regexp</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#BE94BB</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.item-access.python constant.other.caps.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#89b6af</string>
-			</dict>
-		</dict>
-
-
-
 
 
 
@@ -1960,10 +1684,10 @@
 
 
 <!-- PYTHON SCOPES
-comment.line.number-sign.python 
-comment.regexp 
-comment.typehint.directive.notation.python 
-comment.typehint.ignore.notation.python 
+comment.line.number-sign.python 414141
+comment.regexp 414141
+comment.typehint.directive.notation.python
+comment.typehint.ignore.notation.python
 comment.typehint.punctuation.notation.python
 comment.typehint.type.notation.python
 comment.typehint.variable.notation.python

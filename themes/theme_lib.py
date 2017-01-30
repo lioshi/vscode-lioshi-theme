@@ -1,6 +1,7 @@
 '''
 lib of theme
 '''
+# pylint: disable=C0301
 
 from lxml import etree
 from colormath.color_objects import sRGBColor, LabColor
@@ -193,11 +194,23 @@ def get_color_file_html_new_color(scope, color, dashed):
     else:
         class_added = ""
 
+    colorText = "#lorem ipsum<br/>! = >< Delec<br/>Rum altese %"
 
     html = "<div class=\""+class_added+"\" title=\""+scope_infos+"\" style=\"background-color:"+color+";\"><br/><span>"+color+"</span></div>\n"
+    # html = "<div style=\"color:"+color+";\"><br/><span>"+colorText+"</span></div>\n"
 
     return html
 
-
+def replace_in_file(replacements, filein):
+    """Replace occurence into file"""
+    lines = []
+    with open(filein) as infile:
+        for line in infile:
+            for src, target in replacements.iteritems():
+                line = line.replace(src, target)
+            lines.append(line)
+    with open(filein, 'w') as outfile:
+        for line in lines:
+            outfile.write(line)
 
 

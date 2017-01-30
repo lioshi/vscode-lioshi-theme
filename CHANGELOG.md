@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.1.5] 2017-01-30
+- new python colors
+
 ## [0.1.4] 2017-01-24
 - mini colors
 
