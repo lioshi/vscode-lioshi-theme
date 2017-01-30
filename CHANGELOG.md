@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.2.0] 2017-01-30
+- homogenic colors
+
 ## [0.1.5] 2017-01-30
 - new python colors
 
