@@ -17,18 +17,14 @@
 			<dict>
 				<key>background</key>
 				<string>#2d2d2d</string>
-				<key>caret</key>
-				<string>#c5c8c6</string>
 				<key>foreground</key>
 				<string>#c5c8c6</string>
 				<key>lineHighlight</key>
-				<string>#323232</string>
+				<string>#303030</string>
 				<key>selection</key>
-				<string>#414141</string>
-				<key>selectionBorder</key>
-				<string>#414141</string>
-				<key>stackGuide</key>
-				<string>#ffff40</string>
+				<string>#565656</string>
+				<key>selectionHighlight</key>
+				<string>#303030</string>
 			</dict>
 		</dict>
 		<dict>
@@ -41,7 +37,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#7A7A7A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -268,6 +264,48 @@
 			<dict>
 				<key>foreground</key>
 				<string>#f7e2b9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>variable.other.php, meta.function.php meta.function.arguments.php meta.function.argument.no-default.php variable.other.php</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5D968D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>
+			meta.function.php meta.function.arguments.php meta.function.argument.no-default.php variable.other.php
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CC6666</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>
+			keyword.operator.class.php
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DE935F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>
+			keyword.operator.assignment.php
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dbc4d9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1129,7 +1167,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#7A7A7A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1164,9 +1202,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#6C6C6C</string>
+				<string>#7A7A7A</string>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#7A7A7A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1513,7 +1551,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ebbe9e</string>
+				<string>#DE935F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1642,7 +1680,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#dbc4d9</string>
+				<string>#CC6666</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1660,7 +1698,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e6ecf2</string>
+				<string>#e9ecd2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1804,7 +1842,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6C6C6C</string>
+				<string>#7A7A7A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1853,7 +1891,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DE935F</string>
+				<string>#B5BD68</string>
 			</dict>
 		</dict>	
 		<dict>

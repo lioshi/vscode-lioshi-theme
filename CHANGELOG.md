@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.2.1] 2017-01-31
+- some php colors
+- new highlight colors, more discret
+- new python colors
+
 ## [0.2.0] 2017-01-30
 - homogenic colors
 
