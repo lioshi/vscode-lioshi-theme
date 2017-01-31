@@ -2,15 +2,22 @@ import asyncio
 
 def showcase():
     """Some code to showcase the syntax.
-
-    Docstrings are recognized and have an additional scope.
-    Color schemas can render them differently from other strings.
-
     HACK doctests are highlighted too.
-    
-        >>> print('''hello
+            >>> print('''hello
         ... world''')
     """
+activities = {8: 'Sleeping',
+              20: 'Eating',
+              22: 'Resting' }
+raw_input("Enter an integer from 1 to 99: ")
+
+for activity_time in sorted(activities.keys()):
+    if hour < activity_time:
+        print activities[activity_time]
+
+class TestMedian(unittest.TestCase):
+    def testMedian(self):
+        self.failUnlessEqual(median([2, 9, 9, 7, 9, 2, 4, 5, 8]), 7)
 
     @decorator(param='spam')
     async def coroutine(db:aio_db.DatabaseConnection) -> List[str]:
@@ -23,7 +30,6 @@ def showcase():
             print(f'Result: {result!r}')
 
     mapping = None     # type: Dict[int, Any] # PEP 484
-
     # a regular expression
     get_regex = lambda: re.compile(     # type: ignore
         r"""\A
@@ -45,11 +51,11 @@ def showcase():
                   .10e12 + 2j) @ mat
 
     return R'''No escapes '\' in this \one'''
-                 
 
 
 
-    
+
+
 
 from time import localtime
 
@@ -100,9 +106,6 @@ while n != "guess":
         print "you guessed it!"
         break
     print
-
-
-
 
 
 """
