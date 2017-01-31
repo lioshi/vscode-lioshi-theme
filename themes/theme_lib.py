@@ -118,6 +118,7 @@ def get_color_file_html_header(bgcolor, fgcolor, infos):
         html {
             background-color: """+bgcolor+""";
             color: """+fgcolor+""";
+            margin: 50px;
         }
         div#colors div {
             width: 64px;

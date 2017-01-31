@@ -6,7 +6,7 @@ Dark theme based inspired by Tomorrow Eighties
 ![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/code-python3.png)
 
 ## Colors
-![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/colors-mini3.png)
+![](https://raw.githubusercontent.com/lioshi/vscode-lioshi-theme/master/images/colors-mini4.png)
 
 ---
 

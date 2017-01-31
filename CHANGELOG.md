@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.2.2] 2017-01-31
+- remove some colors (greyscale)
+
 ## [0.2.1] 2017-01-31
 - some php colors
 - new highlight colors, more discret
