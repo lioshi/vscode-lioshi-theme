@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.2.3] 2017-02-01
+- new multi selection color (more visible, not only for bat)
+
 ## [0.2.2] 2017-01-31
 - remove some colors (greyscale)
 

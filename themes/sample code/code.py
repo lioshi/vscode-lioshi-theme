@@ -21,7 +21,7 @@ class TestMedian(unittest.TestCase):
 
     @decorator(param='spam')
     async def coroutine(db:aio_db.DatabaseConnection) -> List[str]:
-        r"""A coroutine."""
+        r"""A coroutine.""" 
 
         await logger.log('working\x12with %r', aio_db)
 

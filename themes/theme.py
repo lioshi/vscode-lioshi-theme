@@ -51,6 +51,7 @@ COLORS_HTML_FILE_CONTENT = get_color_file_html_header(GENERAL_PARAMS['background
 # default colors
 THEME_COLORS = [
     "#303030",
+    "#404040",
     "#c5c8c6",
     "#CC6666",
     "#DE935F",
