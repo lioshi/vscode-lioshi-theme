@@ -13,7 +13,7 @@
 	<key>settings</key>
 	<array>
 		<dict>
-			<key>settings</key>
+			<key>settings</key>     
 			<dict>
 				<key>background</key>
 				<string>#2d2d2d</string>
@@ -277,8 +277,39 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>punctuation.section.array.begin.php, punctuation.section.array.end.php</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CC6666</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.operator.logical.php, meta.array.php keyword.operator.key.php, keyword.operator.comparison.php, keyword.operator.assignment.php</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F0C674</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.operator.key.php,
+			support.function.construct.php
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#89b6af</string>
+			</dict>
+		</dict>
+  		<dict>
+			<key>scope</key>
 			<string>
-			meta.function.php meta.function.arguments.php meta.function.argument.no-default.php variable.other.php
+			meta.function.php meta.function.arguments.php meta.function.argument.no-default.php variable.other.php,
+			keyword.operator.increment-decrement.php,
+			keyword.operator.class.php
 			</string>
 			<key>settings</key>
 			<dict>

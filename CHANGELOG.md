@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.2.5] 2017-02-02
+- some new php colors agin
+
+## [0.2.4] 2017-02-02
+- some new php colors (assignements)
+
 ## [0.2.3] 2017-02-01
 - new multi selection color (more visible, not only for bat)
 
