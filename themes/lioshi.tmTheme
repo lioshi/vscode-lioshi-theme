@@ -286,7 +286,16 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>keyword.operator.logical.php, meta.array.php keyword.operator.key.php, keyword.operator.comparison.php, keyword.operator.assignment.php</string>
+			<string>punctuation.definition.array.begin.php, punctuation.definition.array.end.php</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C5c8c6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.operator.logical.php, meta.array.php keyword.operator.key.php, keyword.operator.comparison.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -331,7 +340,7 @@
 		<dict>
 			<key>scope</key>
 			<string>
-			keyword.operator.assignment.php
+			keyword.operator.assignment.php, keyword.operator.string.php
 			</string>
 			<key>settings</key>
 			<dict>

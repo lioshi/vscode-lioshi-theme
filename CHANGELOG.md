@@ -1,7 +1,10 @@
 # Change Log
 
+## [0.2.7] 2017-02-08
+- some new php colors again
+
 ## [0.2.5] 2017-02-02
-- some new php colors agin
+- some new php colors again
 
 ## [0.2.4] 2017-02-02
 - some new php colors (assignements)
